@@ -6,7 +6,7 @@ import { useState, useTransition } from "react";
 import { FullHeart } from "@/components/icons/full-heart";
 import { SearchResult } from "@/app/gallery/page";
 import { setAsFavoriteAction } from "@/app/gallery/actions";
-
+import { ImageMenu } from './image-menu';
 
 export function CloudinaryImage(
   props: {
@@ -19,7 +19,7 @@ export function CloudinaryImage(
   const { imageData, onUnheart } = props;
 
   const [isFavorited, setIsFavorited] = useState(
-    imageData.tags.includes("favorite")
+    imageData.tags?.includes("favorite")
   );
 
   return (
@@ -47,7 +47,7 @@ export function CloudinaryImage(
           className="absolute top-2 left-2 hover:text-red-500 cursor-pointer"
         />
       )}
-      
+       <ImageMenu image={imageData} />
     </div>
   );
 }

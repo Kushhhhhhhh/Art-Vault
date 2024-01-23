@@ -10,13 +10,19 @@ export type SearchResult = {
   };
   
 
-export default async function Gallery() {
-  const results = await cloudinary.v2.search
-  .expression('resource_type:image')
+export default async function Gallery({
+  searchParams: {search},
+ } : {
+  searchParams: {
+    search: string;
+  };
+}) {
+  const results = (await cloudinary.v2.search
+  .expression(`resource_type:image${search ? ` AND tags=${search}` : ""}`)
   .sort_by('public_id', 'desc')
-  .max_results(5)
-  .execute() as { resources: SearchResult[]};
-  console.log(results);
+  .max_results(10)
+  .execute()) as { resources: SearchResult[]};
+  
 
 return ( 
    <section>
@@ -26,8 +32,9 @@ return (
          <UploadButton />
     </div>
 
-    <SearchForm initialSearch=""/>
+    <SearchForm initialSearch={search}/>
     <GalleryGrid images={results.resources} />
+
     </div>
     </section>
     );

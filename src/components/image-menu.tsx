@@ -10,7 +10,7 @@ import { AddToAlbumDialog } from "./add-to-album-dialog";
 import { SearchResult } from "@/app/gallery/page";
 import { useState } from "react";
 import Link from "next/link";
-//import { Pencil } from "lucide-react";
+import { Pencil } from "lucide-react";
 
 export function ImageMenu({ image }: { image: SearchResult }) {
   const [open, setOpen] = useState(false);
@@ -36,7 +36,7 @@ export function ImageMenu({ image }: { image: SearchResult }) {
               <Link
                 href={`/edit?publicId=${encodeURIComponent(image.public_id)}`}
               >
-                
+                <Pencil className="mr-2 w-4 h-4" />
                 Edit
               </Link>
             </Button>

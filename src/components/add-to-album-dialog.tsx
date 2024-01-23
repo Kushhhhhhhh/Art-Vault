@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-//import { FolderPlus } from "lucide-react";
+import { FolderPlus } from "lucide-react";
 import { useState } from "react";
 import { addImageToAlbum } from "./action";
 
@@ -37,7 +37,7 @@ export function AddToAlbumDialog({
     >
       <DialogTrigger>
         <Button variant="ghost">
-          
+          <FolderPlus className="mr-2 h-4 w-4" />
           <span>Add to Album</span>
         </Button>
       </DialogTrigger>

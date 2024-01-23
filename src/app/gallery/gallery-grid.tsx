@@ -15,7 +15,7 @@ export default function GalleryGrid({ images }: { images: SearchResult[] }) {
             imageData={imageData}
             width="400"
             height="300"
-            alt="an image of something"
+            alt="my image"
           />
         );
       }}
