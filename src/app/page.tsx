@@ -46,7 +46,7 @@ export default function Home() {
 Art Vault is not just a Pinterest clone, it`s a sanctuary for art enthusiasts, creators, and collectors alike. Dive into a world where creativity knows no bounds, and every image is a masterpiece waiting to be discovered.</p>
           <br />
           <Link href='/gallery' className="text-indigo-700 text-xl flex justify-center items-center cursor-pointer mb-4">Dive in
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5 ml-2" viewBox="0 0 24 24">
+            <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5 ml-2" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg></Link>
           
