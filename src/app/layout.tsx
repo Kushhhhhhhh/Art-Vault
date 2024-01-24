@@ -24,6 +24,8 @@ export default function RootLayout({
               src="/album.png"
               width={100}
               height={100}
+              loading="lazy"
+              quality={100}
               alt="app-logo"
             /></Link>
             <p className="text-xl font-medium text-center">Art Vault</p>
