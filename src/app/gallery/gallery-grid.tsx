@@ -8,11 +8,11 @@ export default function GalleryGrid({ images }: { images: SearchResult[] }) {
   return (
     <ImageGrid
       images={images}
-      getImage={(imageData: SearchResult) => {
+      getImage={(imagedata: SearchResult) => {
         return (
           <CloudinaryImage
-            key={imageData.public_id}
-            imageData={imageData}
+            key={imagedata.public_id}
+            imagedata={imagedata}
             width="400"
             height="300"
             alt="my image"

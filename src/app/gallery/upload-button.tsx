@@ -10,12 +10,13 @@ export default function UploadButton() {
   return (
     <Button asChild>
       <CldUploadButton
-        uploadPreset="djpi5pelg"
+        
         onUpload={(result: CldUploadWidgetResults) => {
           setTimeout(() => {
             router.refresh();
           }, 2000);
         }}
+        uploadPreset="my-pic"
       >
         <div className="flex gap-2">
           <svg

@@ -94,12 +94,13 @@ export default function RootLayout({
       <body>
       <div className="border-b">
           <div className="flex h-16 items-center px-4 container mx-auto">
+            <Link href='/'>
             <Image
               src="/album.png"
               width="100"
               height="100"
               alt="app-logo"
-            />
+            /></Link>
             <p className="text-xl font-medium ">Art Vault</p>
             <div className="ml-auto flex items-center space-x-4">
               <Avatar>
