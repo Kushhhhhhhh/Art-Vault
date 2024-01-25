@@ -1,7 +1,7 @@
-import UploadButton from "./upload-button";
+import UploadButton from "../../components/upload-button";
 import cloudinary from 'cloudinary';
-import GalleryGrid from "./gallery-grid";
-import { SearchForm } from "./search-form";
+import GalleryGrid from "../../components/gallery-grid";
+import { SearchForm } from "../../components/search-form";
 
 
 export type SearchResult = {
