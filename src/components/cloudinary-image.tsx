@@ -5,7 +5,7 @@ import { CldImage, CldImageProps } from "next-cloudinary";
 import { useState, useTransition } from "react";
 import { FullHeart } from "@/components/icons/full-heart";
 import { SearchResult } from "@/app/gallery/page";
-import { setAsFavoriteAction } from "@/components/actions";
+import { setAsFavoriteAction } from "@/app/gallery/actions";
 import { ImageMenu } from './image-menu';
 
 export function CloudinaryImage(

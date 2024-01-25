@@ -1,7 +1,7 @@
-import UploadButton from "../../components/upload-button";
+import UploadButton from "./upload-button";
 import cloudinary from 'cloudinary';
-import GalleryGrid from "../../components/gallery-grid";
-import { SearchForm } from "../../components/search-form";
+import GalleryGrid from "./gallery-grid";
+import { SearchForm } from "./search-form";
 
 
 export type SearchResult = {
@@ -20,7 +20,7 @@ export default async function Gallery({
   const results = (await cloudinary.v2.search
   .expression(`resource_type:image${search ? ` AND tags=${search}` : ""}`)
   .sort_by('public_id', 'desc')
-  .max_results(10)
+  .max_results(30)
   .execute()) as { resources: SearchResult[]};
   
 return ( 
