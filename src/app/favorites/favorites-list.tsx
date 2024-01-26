@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { SearchResult } from "../app/gallery/page";
+import { SearchResult } from "../gallery/page";
 import { ImageGrid } from "@/components/image-grid";
 import { CloudinaryImage } from "@/components/cloudinary-image";
 
