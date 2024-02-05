@@ -33,7 +33,9 @@ export default function RootLayout({
           </div>
         <div className="flex">
           <Sidebar />
-          <div className="w-full mr-4 px-4 pt-8">{children}</div>
+          <div className="mr-4 px-4 pt-8">
+            {children}
+            </div>
         </div>
       </body>
     </html>
