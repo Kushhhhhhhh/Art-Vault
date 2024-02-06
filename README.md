@@ -1,7 +1,8 @@
-Art Vault - Your Personal Photo Gallery
+## Art Vault - Your Personal Photo Gallery
 Overview
-
+```
 Welcome to Art Vault, your personal haven for organizing and cherishing your cherished memories through a user-friendly web app. Art Vault allows you to upload photos, curate favorites, create albums, and easily search for photos based on tags. This README file will guide you through the features and usage of Art Vault.
+```
 Features
 1. Photo Upload
 
