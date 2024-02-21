@@ -15,10 +15,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
-      <body>
-      <div className="border-b flex justify-center items-center">
-          <div className="flex h-16 items-center px-4 container mx-auto">
+    <html lang="en">
+      <body className="dark">
+      <div className="dark border-b flex justify-center items-center">
+          <div className="dark flex h-16 items-center px-4 container mx-auto">
             <Link href='/'>
             <Image
               src="/album.png"

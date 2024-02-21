@@ -9,7 +9,7 @@ export default async function AlbumsPage() {
   };
 
   return (
-    <section className="flex flex-col gap-8">
+    <section className="dark flex flex-col gap-8">
   <div className="flex justify-between">
     <h1 className="text-4xl font-bold">Albums</h1>
   </div>
